@@ -35,23 +35,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px;
 }
-.text {
-  padding: 10px;
-}
+
 
 #author { 
   display: flex;
   justify-content: flex-end;
   font-size: 1.2rem;
-  padding-bottom: 15px;
+  padding: 0 15px 20px 0;
+  color: #456377;
 }
 
 #buttons {
   display: flex;
   justify-content: space-between;
   height: 30px;
+  
 }
 
 #new-quote {

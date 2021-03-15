@@ -31,7 +31,7 @@ const Quotes = () => {
         twitter.setAttribute(
             'href',
             'https://twitter.com/intent/tweet?hashtags=Quote,Fcc&related=freecodecamp&text=' +
-            encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+            encodeURIComponent('"' + currentQuote + '" - ' + currentAuthor)
         )
         const tumblr = document.querySelector('#tumblr-quote')
         tumblr.setAttribute('href', 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +

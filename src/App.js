@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Quotes />
-      <footer>Code By Kesinee</footer>
+      <footer>Coded By Kesinee</footer>
     </div>
   );
 }
