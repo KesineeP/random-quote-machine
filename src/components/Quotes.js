@@ -25,6 +25,21 @@ const Quotes = () => {
                 setQuote(randomQuote.quote);
                 setAuthor(randomQuote.author);
             })
+        const currentQuote = quote;
+        const currentAuthor = author;
+        const twitter = document.querySelector('#tweet-quote')
+        twitter.setAttribute(
+            'href',
+            'https://twitter.com/intent/tweet?hashtags=Quote,Fcc&related=freecodecamp&text=' +
+            encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+        )
+        const tumblr = document.querySelector('#tumblr-quote')
+        tumblr.setAttribute('href', 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' +
+            encodeURIComponent(currentAuthor) +
+            '&content=' +
+            encodeURIComponent(currentQuote) +
+            '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
+        )
     }
     const handleClick = () => {
         getQuote();
@@ -43,10 +58,10 @@ const Quotes = () => {
             </div>
             <div id="buttons">
                 <div id="social-media">
-                    <a href="https://twitter.com/intent/tweet" target="_blankid" id="tweet-quote">
+                    <a target="_blankid" id="tweet-quote">
                         <FaTwitterSquare />
                     </a>
-                    <a href="#" id="tweet-quote">
+                    <a target="_blankid" id="tumblr-quote">
                         <FaTumblrSquare />
                     </a>
                 </div>
