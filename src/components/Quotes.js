@@ -58,10 +58,10 @@ const Quotes = () => {
             </div>
             <div id="buttons">
                 <div id="social-media">
-                    <a target="_blankid" id="tweet-quote">
+                    <a target="_blank" id="tweet-quote">
                         <FaTwitterSquare />
                     </a>
-                    <a target="_blankid" id="tumblr-quote">
+                    <a target="_blank" id="tumblr-quote">
                         <FaTumblrSquare />
                     </a>
                 </div>
